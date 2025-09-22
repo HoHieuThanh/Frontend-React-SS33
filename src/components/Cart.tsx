@@ -32,7 +32,7 @@ function Cart() {
             </tr>
           ) : (
             cart.map((c: ProductTypes, index: number) => (
-              <CartItem key={c.id} item={{ ...c, stt: index + 1 }} />
+              <CartItem key={c.id} item={{ ...c}} index={index + 1} />
             ))
           )}
         </tbody>

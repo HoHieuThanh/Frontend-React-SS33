@@ -23,7 +23,7 @@ function CartItem({ item, index }: any) {
         <input
           id={`qty-${item.id}`}
           type="number"
-          defaultValue={item.quantity}
+          value={item.quantity}
           className="border w-16 text-center"
         />
       </td>
